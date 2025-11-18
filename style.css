@@ -72,16 +72,18 @@ nav ul li a:hover {
 
 .hero h1 span {
   color: #00eaff;
+  
 }
 
 .hero p {
-  margin-top: 10px;
+font-size: 25px;
+  margin-top: 0;
   color: #ccc;
 }
 
 .btn {
   display: inline-block;
-  margin-top: 20px;
+  margin-top:5px;
   padding: 12px 25px;
   background: #00eaff;
   color: black;
@@ -187,4 +189,25 @@ form button {
   .menu-btn {
     display: block;
   }
+}
+.hero-content {
+    display: flex; /* Permet d'aligner la photo et le texte côte à côte */
+    align-items: center; /* Centre verticalement les éléments */
+    gap: 20px; /* Ajoute un espace entre la photo et le texte */
+    flex-wrap: wrap; /* Pour que les éléments passent à la ligne sur petits écrans */
+    justify-content: center; /* Centrer le contenu du hero */
+    text-align: center; /* Pour le texte */
+}
+
+.profile-pic {
+    width: 300px; /* Taille de la photo */
+    height: 300px; /* Doit être égale à la largeur pour un cercle */
+    border-radius: 50%; /* Rend la photo circulaire */
+    object-fit: cover; /* Assure que l'image couvre bien l'espace sans être déformée */
+    border: 4px solid #007bff; /* Petite bordure autour de la photo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+.hero h1 {
+    margin-top: 0; /* Ajuste la marge du titre si nécessaire */
 }
