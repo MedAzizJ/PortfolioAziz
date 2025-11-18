@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio - Aziz Taboubi</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+    <!-- HEADER -->
     <header>
-        <h1>Bienvenue sur mon site personnel</h1>
-        <p>Étudiant en Systèmes Embarqués - Passionné de technologie</p>
+        <nav>
+            <div class="logo">Aziz.dev</div>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        </nav>
     </header>
 
-    <section class="container">
-        <h2>À propos de moi</h2>
-        <p>
-            Je m'appelle <b> Mohamed Aziz Jebali</b>, étudiant en 2ᵉ année Systèmes Embarqués.
-            Je suis passionné par l'électronique, les microcontrôleurs, le développement mobile 
-            et les systèmes intelligents.
-        </p>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <h1>Salut, je suis <span>Aziz</span></h1>
+        <p>Développeur Full Stack — Python | Java | Embedded Systems</p>
+        <a href="#projects" class="btn">Voir mes projets</a>
     </section>
 
-    <section class="container">
-        <h2>Centres d’intérêt</h2>
-        <ul>
-            <li>Arduino / ESP32 / électronique</li>
-            <li>Développement Android</li>
-            <li>Programmation C, Java</li>
-            <li>Intelligence Artificielle</li>
-            <li>Sports et voyages</li>
-        </ul>
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">Embedded Systems</div>
+            <div class="skill">HTML / CSS / JS</div>
+            <div class="skill">Flutter</div>
+            <div class="skill">AI & IoT</div>
+        </div>
     </section>
 
-    <section class="container">
-        <h2>Activités</h2>
-        <p>
-            Participation à des projets académiques :  
-            - Système ABS  
-            - Mesure de température (LM35)  
-            - Gestion de tâches Android  
-            - Systèmes embarqués IoT  
-        </p>
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <h2>Projets</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>ERP Open Source</h3>
+                <p>ERP complet Python/Java : gestion commerciale, stock et commandes.</p>
+            </div>
+            <div class="project-card">
+                <h3>HoutaTrack</h3>
+                <p>Application pêcheurs : météo, vent, GPS, communication.</p>
+            </div>
+            <div class="project-card">
+                <h3>IoT Smart Gate</h3>
+                <p>Système ESP8266 + RFID + interface pour contrôle des véhicules.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Votre Nom" required />
+            <input type="email" placeholder="Votre Email" required />
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
     </section>
 
     <footer>
-        <p>© 2025 - Mohamed Aziz Jebali</p>
+        <p>© 2025 Aziz — Tous droits réservés</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
